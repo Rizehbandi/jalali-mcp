@@ -1,0 +1,28 @@
+{
+  "name": "jalali-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A public Jalali calendar MCP server for Cloudflare Workers and ChatGPT.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "agents": "0.19.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20260726.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "wrangler": "4.114.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
